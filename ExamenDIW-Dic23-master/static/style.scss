@@ -1,0 +1,160 @@
+$azul : #002858;
+$azul2 : #002858aa;
+$amarillo: #ffc836;
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+body {
+    background-color: $azul2;
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+}
+
+
+
+.tabla {
+    border-collapse: collapse;
+    border: 5px solid $amarillo;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-collapse: collapse;
+
+}
+
+.tabla th, .tabla td {
+    border: 2px solid $amarillo;
+    padding: 10px;
+}
+
+.tabla th {
+    background-color: $amarillo;
+    color: $azul;    
+}
+
+.tabla td {
+    color: $amarillo;
+}
+
+.listado{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto; 
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+
+.listado h1 {
+    color: $amarillo;
+    padding: 50px;
+    font-size: 50px;
+}
+
+.boton {
+    background-color: $amarillo;
+}
+
+.tabla tr:hover th,
+.tabla tr:hover td {
+    background-color: $amarillo;
+    color: $azul;
+}
+
+.menu {
+    background-color: $azul; 
+    width: 200px; 
+    height: 100vh; 
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.menu img {
+    display: block;
+    margin: 0 auto; 
+    padding-bottom: 20px; 
+}
+
+.menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    text-align: center;
+}
+
+.menu nav ul li {
+    padding: 30px 0; 
+}
+
+.menu nav ul li a {
+    text-decoration: none; 
+    color: #ffffff; 
+    display: block; 
+}
+
+.menu nav ul li:hover {
+    background-color: $amarillo;
+    color: $azul; 
+}
+
+.menu nav ul li:hover a{
+    background-color: $amarillo;
+    color: $azul; 
+}
+
+footer {
+    padding: 40px;
+    color: $amarillo;
+}
+.nuevoCoche {
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.formCoche {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.777);
+    margin: 15% auto; 
+    padding: 20px;
+    border: 3px solid black;
+    width: 20%; 
+    justify-content: center;
+    align-items: center;
+    color: $azul;
+    
+    h2{
+        color: $azul;
+    }
+}
+
+.formCoche ul{
+    list-style: none;
+}
+
+.formCoche li{
+    padding: 10px;
+}
